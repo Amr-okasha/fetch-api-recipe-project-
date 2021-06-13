@@ -3,8 +3,7 @@ const searchForm = document.querySelector("form");
 const searchedRes = document.getElementsByClassName("searched-res");
 const container = document.getElementsByClassName("parent");
 let searchText = "";
-// const appId = `e3eda108`;
-// const appKey = `7ed8b37a43583917c00eb43315466b86`;
+
 
 searchForm.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -46,4 +45,3 @@ function generateHtml(results) {
 
   searchedRes[0].innerHTML = generatedHtml;
 }
-// , { Header: "Access-Control-Allow-Origin:*", Header: "Access-Control-Allow-Headers", Header: "Origin,X-Requested-With,Content-Type,Accept" }
