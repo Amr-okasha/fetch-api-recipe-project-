@@ -1,0 +1,211 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+:root {
+  --fontsC: rgb(228, 222, 212);
+}
+.image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+html {
+  font-size: 15px;
+  font-family: "Trebuchet ";
+}
+.section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: rgb(19, 87, 82);
+  color: var(--fontsC);
+  margin: 0px;
+}
+.parent {
+  width: 90%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--fontsC);
+  margin-bottom: 30px;
+}
+form {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: var(--fontsC);
+  display: flex;
+}
+form input {
+  width: 90%;
+  background-color: var(--fontsC);
+  height: 50px;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 10px;
+}
+form ion-icon {
+  width: 8%;
+  font-size: 3rem;
+  margin-bottom: -9px;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+}
+
+.searched-res {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-gap: 30px;
+  grid-template: auto / repeat(auto-fit, minmax(250px, 1fr));
+}
+.items {
+  width: 100%;
+  border-radius: 8px;
+  background: rgb(24, 54, 52);
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+  min-height: 400px;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: space-between;
+}
+.items img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+.items .flex-container {
+  margin-top: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-between;
+  align-content: center;
+}
+.title {
+  color: var(--fontsC);
+  align-self: center;
+  font-size: 0.9rem;
+  max-width: 150px;
+}
+.btn {
+  text-decoration: none;
+  color: var(--fontsC);
+  text-align: center;
+  background: #404041;
+  font-size: 0.8rem;
+  border: 1px solid rgb(99, 74, 74);
+  padding: 5px;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+.search {
+  margin: auto;
+}
+.item-data {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  position: relative;
+  bottom: 0px;
+}
+.initial .header {
+  font-size: 6rem;
+}
+.initial form {
+  max-width: 800px;
+}
+
+@media (max-width: 800px) {
+  .initial .header {
+    font-size: 3rem;
+  }
+  .initial form {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .initial .header {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 0.8rem;
+    max-width: 140px;
+  }
+  .initial form {
+    max-width: 300px;
+    margin: 20px auto;
+    height: 30px;
+  }
+  form input {
+    height: 20px;
+    font-size: 1.2rem;
+    padding: 2px;
+    align-self: center;
+  }
+  form ion-icon {
+    position: relative;
+    bottom: 7px;
+  }
+}
+
+@media (max-width: 450px) {
+  .initial .header {
+    font-size: 1.5rem;
+  }
+  .initial form {
+    max-width: 200px;
+  }
+  .search {
+    margin: auto;
+  }
+  form input {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  .initial .header {
+    font-size: 1.3rem;
+  }
+  .initial form {
+    max-width: 150px;
+    height: 20px;
+  }
+  form input {
+    font-size: 0.8rem;
+    height: 10px;
+  }
+  form ion-icon {
+    position: relative;
+    bottom: 12px;
+  }
+  .title {
+    font-size: 0.7rem;
+    max-width: 140px;
+  }
+  @media (max-width: 250px) {
+    .initial .header {
+      font-size: 1.3rem;
+    }
+
+    form input {
+      font-size: 0.7rem;
+    }
+  }
+}
